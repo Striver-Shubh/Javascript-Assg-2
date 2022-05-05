@@ -33,5 +33,4 @@ function addData() {
   row.appendChild(mob);
 
   tbody.appendChild(row);
-  styles();
 }

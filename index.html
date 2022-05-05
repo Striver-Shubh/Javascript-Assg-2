@@ -18,33 +18,41 @@
     <title>Employee basic details store</title>
   </head>
   <body>
-    <div class="d-flex bg-secondary text-white" style="min-height: 100vh">
-      <form class="w-50 d-flex flex-column justify-content-center p-5">
-        <div class="form-group mb-3">
-          <label for="name">Name:</label>
-          <input type="text" class="form-control" id="name" />
-        </div>
-        <div class="form-group mb-3">
-          <label for="email">Email address:</label>
-          <input type="email" class="form-control" id="email" />
-          <p class="text-danger d-none" id="emailValidate">Invalid Email.</p>
-        </div>
-        <div class="form-group mb-3">
-          <label for="mob"> Mobile No</label>
-          <input type="text" class="form-control" id="mob" />
-        </div>
-        <button class="btn btn-primary shadow" type="submit">Submit</button>
-      </form>
-      <div class="table w-50 text-white p-5">
+    <div
+      class="d-flex flex-column flex-md-row bg-secondary text-white"
+      style="min-height: 100vh"
+    >
+      <div class="w-100 w-md-50 p-5">
+        <h3 class="text-center">Enter Details</h3>
+        <form class="d-flex flex-column justify-content-center">
+          <div class="form-group mb-3">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="form-group mb-3">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email" />
+            <p class="text-danger d-none" id="emailValidate">Invalid Email.</p>
+          </div>
+          <div class="form-group mb-3">
+            <label for="mob"> Mobile No</label>
+            <input type="text" class="form-control" id="mob" />
+          </div>
+          <button class="btn btn-primary shadow" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="w-100 w-md-50 p-5">
         <h3 class="text-center">Displaying Employee Details</h3>
-        <table class="table table-bordered text-white">
-          <thead>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Mobile no</th>
-          </thead>
-          <tbody></tbody>
-        </table>
+        <div class="table text-white">
+          <table class="table table-bordered text-white">
+            <thead>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Mobile no</th>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
     </div>
     <script src="index.js"></script>
